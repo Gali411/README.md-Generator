@@ -1,8 +1,8 @@
-# ggg
+# Enter Title Project here
 
   ## Badge
 
-  https://shields.io/badge/license-MIT-green
+  https://shields.io/badge/license-BSD-green
 
   ## Table of Contents
   1. [Description](#Description)
@@ -15,27 +15,27 @@
 
   ## Description
 
-  ggg
+  Enter the description for your project 
 
   ## Installation
 
-  ggg
+  enter instructions for installation
 
   ## Usage
 
-  ggg
+  enter explaination on how to use your application
 
   ## Contribution 
 
-  ggg
+  enter instructions for contribution here
 
   ## Tests
 
-  ggg
+  enter in any tests 
 
   ## License
-  This project uses the MIT.
-  Go to https://mit-license.org/ to learn more.
+  This project uses the BSD.
+  Go to https://opensource.org/licenses/BSD-3-Clause to learn more.
 
   ## Questions 
 
