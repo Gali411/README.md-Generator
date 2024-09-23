@@ -60,7 +60,17 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Badge
+
   ${renderLicenseBadge(data.license)}
+
+  ## Table of Contents
+  1. [Description](#Description)
+  2. [Installation](#Installation)
+  3. [Usage](#Usage) 
+  4. [Contribution](#Contribution)
+  5. [Tests](#Tests)
+  6. [License](#License) 
+  7. [Questions](#Questions)
 
   ## Description
 
@@ -79,11 +89,18 @@ function generateMarkdown(data) {
   ${data.contribution}
 
   ## Tests
+
   ${data.test}
 
   ## License
-  ${data.license}
-  ${renderLicenseSection(data.license)}
+  This project uses the ${data.license}.
+  Go to ${renderLicenseSection(data.license)} to learn more.
+
+  ## Questions 
+
+  You can find me on Github by clicking this link: https://github.com/${data.github}.
+  You can also reach out to me by email at: ${data.email}.
+
   `
 };
 

@@ -41,12 +41,24 @@ const questions = [
         message: 'Choose a lisence',
         choices: ['None', 'MIT', 'BSD', 'GPL', 'Apache']
     },
+    {
+        type: 'input',
+        message: 'Enter GitHub username:',
+        name: 'github'
+    },
+    {
+        type: 'input',
+        message: 'Enter email address:',
+        name: 'email'
+    }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile(fileName, data, (error) =>
+    let name = "./readme/" + fileName;
+
+    fs.writeFile(name, data, (error) =>
         error ? console.error(error) : console.log(data)
       );
 };
@@ -56,7 +68,7 @@ function init() {
     
     inquirer.prompt(questions).then(answers => {
     const readmeContent = generateMarkdown(answers);
-    writeToFile('README.md', readmeContent);
+    writeToFile('README.md',readmeContent);
   });
 
 }
